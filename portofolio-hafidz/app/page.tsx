@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
-import { Moon, Sun, Mail, Phone, ExternalLink, ArrowRight, Download, Menu, X, ChevronRight, Briefcase, GraduationCap, MapPin } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Moon, Sun, Mail, Phone, ArrowRight, Menu, X, Briefcase, GraduationCap } from 'lucide-react';
 
 // Data CV Muhammad Hafidz dalam Bahasa Indonesia
 const CV_DATA = {
@@ -680,7 +680,7 @@ export default function App() {
           </div>
 
           <div className="container mx-auto px-6 md:px-12 mt-32 pt-8 border-t border-zinc-800 flex flex-col md:flex-row justify-between items-center text-zinc-500 text-sm">
-            <p>© {new Date().getFullYear()} {CV_DATA.name}. Hak cipta dilindungi.</p>
+            <p>&copy; {new Date().getFullYear()} {CV_DATA.name}. Hak cipta dilindungi.</p>
             <p className="mt-2 md:mt-0">Dirancang & Dibangun dengan React & Tailwind</p>
           </div>
         </section>
